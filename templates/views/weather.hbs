@@ -1,0 +1,55 @@
+{{!-- https://api.openweathermap.org/data/2.5/weather?q=pune&units=metric&appid=845e1b050425de7d7c1de2714a3e56ca --}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerLink}}
+</head>
+
+<body>
+    <div class="container-fluid main_menu">
+        <div class="row">
+            <div class="col-mid-8 col-10 mx-auto">
+                {{>navbar}}
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-mid-12 col-8 mx-auto">
+                <div class="main_form">
+                    <form class="temp_form">
+                        <input type="text" id="cityname" placeholder="Enter your City name" autocomplete="off">
+                        <input type="submit" value="search" id="submitBtn">
+                    </form>
+                </div>
+
+
+                <div class="tempInformation">
+
+                    <div class="top_layer">
+                        <p id="'day">Tuesday</p>
+                        <p id="today_data">13 oct</p>
+                    </div>
+                    <div class="main_layer">
+                        <p id="city_name">
+                            Get output here
+                        </p>
+                        <div class="middle_layer data_hide">
+                            <p id="temp"><span>23</span><sup>o</sup>C</p>
+                            <p id="temp_status"><i class="fa fa-cloud" aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer code  -->
+    {{>footer}}
+</body>
+<script src="js/main.js">
+
+</script>
+
+</html>

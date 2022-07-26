@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerLink}}
+</head>
+
+<body>
+    <div class="container-fluid main_menu">
+        <div class="row">
+            <div class="col-mid-8 col-10 mx-auto">
+                {{>navbar}}
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-mid-8 col-10 mx-auto">
+                <div class="row">
+                    <!-- left side div -->
+                    <div class="col-mid-10 col-10 main_header_left">
+
+
+
+                        <!-- right side div -->
+                        <figure class="errorimg">
+                            <img src="./images/bg6.jpg" alt="error" class="img-fluid" title="thapa technical">
+                        </figure>
+                        <p>Welcome to weather app</p>
+                        <h1>{{errorMsg}}</h1>
+                        <a href="/"><button>GoBack</button></a>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer code  -->
+    {{>footer}}
+</body>
+
+</html>
